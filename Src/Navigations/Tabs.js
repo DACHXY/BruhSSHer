@@ -1,13 +1,19 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomePage from '../Pages/HomePage';
 import NavigationBar from '../Components/NavigationBar';
+import { Colors } from '../Global/Colors';
 
 const Tab = createBottomTabNavigator();
 
 const screenOptions = {
-    headerShown: false
+    headerShown: true,
+	headerStyle: {
+		backgroundColor: Colors.mainColor
+	},
+	headerTitleStyle: {
+		color: Colors.contractColor
+	}
 }
-
 
 function Tabs() {
   return (

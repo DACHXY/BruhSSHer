@@ -1,9 +1,10 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import Icon from '../Icons/Icons';
+import { Colors } from '../../Global/Colors';
 
 function NavigationBar ({ state, descriptors, navigation }) {
     return (
-        <View style={{ flexDirection: 'row' }}>
+        <View style={{ flexDirection: 'row', backgroundColor: Colors.mainColor, height: 60 }}>
         {state.routes.map((route, index) => {
           const { options } = descriptors[route.key];
           const label =
@@ -46,7 +47,7 @@ function NavigationBar ({ state, descriptors, navigation }) {
               style={{ flex: 1, alignItems: 'center', justifyContent: "center" }}
             >
               <Icon iconName={label}/>
-              <Text style={{ color: isFocused ? '#673ab7' : '#222' }}>
+              <Text style={{ color: isFocused ? Colors.contractColor : Colors.secondColor }}>
                 {label}
               </Text>
             </TouchableOpacity>
