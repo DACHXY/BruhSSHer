@@ -4,7 +4,7 @@ const serverID = uuid.v4()
 export const fakeTextCommandData = {
     id: uuid.v4(),
     CommandName: "ToggleHostSpot",
-    Command: "start ./Documents/DN/CMD/ToggleHotSpot.bat",
+    Command: "cmd /c C:/Users/danny/Documents/DN/CMD/ToggleHotSpot.bat",
     ButtonType: "Text",
     ShowOutput: false,
     Icon: "",
@@ -15,7 +15,7 @@ export const fakeTextCommandData = {
 export const fakeIconCommandData = {
     id: uuid.v4(),
     CommandName: "Volumn Up",
-    Command: "start ./Documents/DN/CMD/ToggleHotSpot.bat",
+    Command: "cmd /c C:/Users/danny/Documents/DN/CMD/ToggleHotSpot.bat",
     ButtonType: "Icon",
     ShowOutput: false,
     Icon: "",
